@@ -1,6 +1,6 @@
 {
   "name": "pfc",
-  "version": "0.0.7",
+  "version": "0.0.1",
   "description": "Persistent file caching system",
   "main": "dist/pfc.cjs.js",
   "module": "dist/pfc.esm-builder.js",
