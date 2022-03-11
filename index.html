@@ -8,7 +8,14 @@
 <body>
   <script type="module">
     import { a } from './dist/pfc.esm-bundler.js';
-    a()
+
+    const code = 'abcdef'.repeat(170000 * 2);
+    const idb = indexedDB.open('test', 1);
+
+    idb.onsuccess = (e) => {
+      const db = e.target.result;
+      console.log(db);
+    }
   </script>
 </body>
 </html>
