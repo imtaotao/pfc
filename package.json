@@ -8,6 +8,7 @@
   "scripts": {
     "test": "jest",
     "build": "rollup --config",
+    "dev": "http-server ./ -o | rollup --config -w",
     "format": "prettier --write --parser typescript \"src/**/*.(js|ts?(x))\""
   },
   "author": "imtaotao",
